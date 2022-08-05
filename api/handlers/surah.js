@@ -8,7 +8,8 @@ class SurahHandler {
 //       delete surah.preBismillah;
 //       return surah;
 //     });
-    const data = quran;
+    const { surah } = req.params;
+    const data = quran[surah - 1];
     return res.status(200).send({
       code: 200,
       status: 'OK.',
