@@ -63,7 +63,7 @@ class SurahHandler {
       code: 200,
       status: 'OK.',
       message: 'Success fetching ayah',
-      data
+      data: [data]
     });
   }
 }
