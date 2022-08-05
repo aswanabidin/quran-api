@@ -11,7 +11,7 @@ class SurahHandler {
     return res.status(200).send({
       code: 200,
       status: 'OK.',
-      message: 'Success fetching all surah.',
+      message: 'Success fetching all surahhh.',
       data
     });
   }
