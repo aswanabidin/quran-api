@@ -2,16 +2,17 @@ const { data: quran } = require('../../data/quran.json');
 
 class SurahHandler {
   static getAllSurah(req, res) {
-    const data = quran.map(item => {
-      const surah = { ...item };
-      delete surah.verses;
-      delete surah.preBismillah;
-      return surah;
-    });
+//     const data = quran.map(item => {
+//       const surah = { ...item };
+//       delete surah.verses;
+//       delete surah.preBismillah;
+//       return surah;
+//     });
+    const data = quran;
     return res.status(200).send({
       code: 200,
       status: 'OK.',
-      message: 'Success fetching all surahhh.',
+      message: 'Success fetching all surah.',
       data
     });
   }
